@@ -10,7 +10,7 @@ export default function AppLayout({ children }) {
                 loop
                 muted
                 playsInline
-                src="public/assets/img/back-video.mp4"
+                src="/SpyGame/assets/img/back-video.mp4"
                 type="video/mp4"
             />
             <div className="content">{children}</div>
