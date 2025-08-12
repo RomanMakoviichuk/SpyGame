@@ -56,6 +56,10 @@ ul li:last-child {
     border-bottom: none;
 }
 
+select {
+    height: 50px;
+}
+
 select option {
     width: 21px!important;
 }
