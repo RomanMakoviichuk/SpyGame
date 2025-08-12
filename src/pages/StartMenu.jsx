@@ -22,7 +22,7 @@ export default function StartMenu({ onNewGame, onExit }) {
         <div className="start-menu">
             <h1>Гра «Шпигун»</h1>
             <button onClick={handleNewGame}>Створити нову гру</button>
-            <button onClick={onExit}>Вийти з гри</button>
+            <button onClick={() => window.close()}>Вийти з гри</button>
         </div>
     );
 }
