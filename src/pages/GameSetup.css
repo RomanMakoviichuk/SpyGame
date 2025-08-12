@@ -1,3 +1,6 @@
+.gameSetup {
+    overflow-y: auto!important;
+}
 
 .player-item {
     display: flex;

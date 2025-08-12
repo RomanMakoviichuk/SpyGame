@@ -22,7 +22,7 @@ export default function GameSetup({
     };
 
     return (
-        <div>
+        <div className="gameSetup">
             <h2>Додайте гравців</h2>
             <input
                 type="text"
