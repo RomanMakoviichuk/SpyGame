@@ -4,21 +4,19 @@
     box-sizing: border-box;
 }
 
-html, body, #root, .app-container {
+body,
+html,
+#root {
+    font-family: 'Caveat', cursive, sans-serif;
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden; /* прибрати скрол */
-}
-
-body,
-html,
-#root {
-    height: 100%;
-    margin: 0;
-    font-family: 'Caveat', cursive, sans-serif;
-    color: #333;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
 }
 
 .app-container {
