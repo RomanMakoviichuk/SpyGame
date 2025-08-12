@@ -1,13 +1,15 @@
-.startMenu {
-    min-height: 100vh;
+.start-menu {
+    min-height: 100vh!important;
     width: 100%;
-    background-image: url("../../public/assets/img/back.png");
     display: flex;
     flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
     gap: 20px;
+
+    background-image: url("/assets/img/back.png");
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .main_btn {
