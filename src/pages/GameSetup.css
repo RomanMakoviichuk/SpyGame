@@ -1,10 +1,9 @@
+
 .player-item {
     display: flex;
-    align-items: center;
+    height: 60px;
     font-size: 35px;
     justify-content: space-between; /* Щоб кнопка була праворуч */
-    padding: 5px 10px;
-    gap: 10px;
 }
 
 .player-item button {
@@ -14,8 +13,9 @@
     font-weight: bold;
     cursor: pointer;
     min-width: auto !important;
-    width: 60px;    /* квадратна кнопка */
-    height: 30px;
+    min-height: auto !important;
+    width: 40px;    /* квадратна кнопка */
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,6 +24,7 @@
     line-height: 1;
     user-select: none;
     padding: 0;
+    margin: 0;
 }
 
 /* Списки гравців */
@@ -33,7 +34,7 @@ ul {
     max-height: 30vh!important;
     overflow-y: auto;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     background: #f1f5f9;
