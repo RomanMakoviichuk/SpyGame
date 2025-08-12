@@ -1,0 +1,47 @@
+/* Гра - екран */
+
+.gameScreen {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+b {
+    color: red;
+}
+
+/* Заголовок */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Поточний гравець */
+p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Виділення слова або ролі */
+b {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+/* Червоний текст для шпигуна */
+p[style*="color: red"] {
+    font-size: 2rem;
+}
+
+button {
+    margin-top: 15px;
+}

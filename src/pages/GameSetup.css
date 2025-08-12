@@ -1,0 +1,53 @@
+.player-item {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    justify-content: space-between; /* Щоб кнопка була праворуч */
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.player-item button {
+    background-color: darkred;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: auto !important;
+    width: 60px;    /* квадратна кнопка */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 1;
+    user-select: none;
+    padding: 0;
+}
+
+/* Списки гравців */
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 37vh!important;
+    overflow-y: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f1f5f9;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #cbd5e1;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}

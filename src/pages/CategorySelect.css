@@ -1,0 +1,29 @@
+/* Категорії */
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto 45px;
+}
+
+.category-list label {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    width: 24px;   /* стандартний розмір ~16px, збільшуємо */
+    height: 24px;
+}
+
+.category-list input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
