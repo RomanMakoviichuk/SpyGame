@@ -55,3 +55,7 @@ ul li {
 ul li:last-child {
     border-bottom: none;
 }
+
+select option {
+    width: 21px!important;
+}
