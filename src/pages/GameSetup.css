@@ -1,7 +1,7 @@
-.gameSetup {
-    overflow-y: auto!important;
-}
 
+h2 {
+    margin: 0;
+}
 .player-item {
     display: flex;
     height: 60px;
