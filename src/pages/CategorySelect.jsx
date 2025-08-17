@@ -38,19 +38,37 @@ export default function CategorySelect({
         const randomWord =
             randomWordList[Math.floor(Math.random() * randomWordList.length)];
 
-        // Роздаємо ролі гравцям
+        // Перемішуємо гравців
         const shuffledPlayers = [...players].sort(() => Math.random() - 0.5);
+
+        // Вибираємо шпигунів
         const spiesSet = new Set();
         while (spiesSet.size < spiesCount) {
             spiesSet.add(Math.floor(Math.random() * players.length));
         }
 
-        const roles = shuffledPlayers.map((player, idx) => ({
-            player,
-            role: spiesSet.has(idx) ? "spy" : "player",
-            word: spiesSet.has(idx) ? null : randomWord,
-            category: randomCategory,
-        }));
+        // Формуємо ролі
+        const roles = shuffledPlayers.map((player, idx) => {
+            if (spiesSet.has(idx)) {
+                // список союзників-шпигунів
+                const allies = shuffledPlayers
+                    .filter((_, i) => spiesSet.has(i) && i !== idx);
+                return {
+                    player,
+                    role: "spy",
+                    word: null,
+                    category: randomCategory,
+                    allies
+                };
+            }
+            return {
+                player,
+                role: "player",
+                word: randomWord,
+                category: randomCategory,
+                allies: []
+            };
+        });
 
         onStart({ roles, category: randomCategory });
     };
